@@ -16,7 +16,7 @@
         <h1 class="text-2xl">Greenden</h1>
 
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-            class="w-6 h-6 md:hidden">
+            class="w-6 h-6 md:hidden cursor-pointer" id="menubtn">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
 
@@ -28,10 +28,27 @@
                 <a class="hover:underline hover:text-black" href="Products.html">Products</a>
             </li>
             <li>
-                <a class="hover:underline hover:text-black" href="#">Contact</a>
+                <a class="hover:underline hover:text-black" href="Contact.html">Contact</a>
             </li>
         </ul>
     </nav>
+    <!--navmenu-->
+    <section class="bg-green-100 fixed z-20 top-0 transition-all duration-1000" style="width: 40%; height: 100vh; right: -50%;" id="navmenu">
+        <div class="text-right p-8">
+            <p class="inline cursor-pointer" id="close">X</p>
+        </div>
+        <ul class="flex flex-col items-center gap-10 text-gray-600 p-5 mb-20">
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="Products.html">Products</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="Contact.html">Contact</a>
+            </li>
+        </ul>
+    </section>
     <!--Header Section-->
     <section class="bg-green-100 p-4 flex justify-center">
         <div>
@@ -158,6 +175,7 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, earum.</p>
         <p>&copy; 2021 Greenday.com</p>
     </section>
+    <script src="index.js"></script>
 </body>
 
 </html>
